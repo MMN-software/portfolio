@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>خانه مدرن | آژانس املاک لوکس ایران</title>
+<meta name="description" content="خانه مدرن، آژانس تخصصی خرید، فروش، رهن و اجاره املاک لوکس در تهران. ویلا، آپارتمان، پنت‌هاوس و زمین با مشاوره حرفه‌ای.">
+<meta name="keywords" content="املاک, خانه مدرن, خرید خانه, اجاره آپارتمان, ویلا, مشاور املاک تهران">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --navy:#0e1a2b;--navy2:#16263d;--navy3:#1f3350;
+  --gold:#c9a86a;--gold2:#e3c98f;
+  --cream:#f8f5ef;--cream2:#efe9de;--white:#fff;
+  --text:#16202e;--muted:#6b7789;--border:#e6e2d9;
+  --shadow:0 4px 24px rgba(14,26,43,.06);
+  --shadow-lg:0 16px 48px rgba(14,26,43,.14);
+  --radius:18px;--radius-sm:12px;--container:1200px;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:Vazirmatn,Tahoma,sans-serif;background:var(--cream);color:var(--text);
+  line-height:1.85;direction:rtl;overflow-x:hidden;font-size:15px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+input,select,textarea{font-family:inherit;font-size:14px}
+.container{max-width:var(--container);margin:0 auto;padding:0 20px}
+.hidden{display:none !important}
+
+/* ===== Header ===== */
+.header{
+  position:fixed;top:0;right:0;left:0;z-index:1000;
+  background:rgba(14,26,43,.85);backdrop-filter:blur(14px);
+  transition:.35s;border-bottom:1px solid rgba(255,255,255,.06);
+}
+.header.scrolled{background:rgba(14,26,43,.98);box-shadow:0 4px 30px rgba(0,0,0,.25)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;font-size:20px;flex-shrink:0}
+.logo-mark{
+  width:40px;height:40px;border-radius:11px;
+  background:linear-gradient(135deg,var(--gold),#a8874a);
+  display:grid;place-items:center;color:var(--navy);font-size:20px;font-weight:800;
+  box-shadow:0 4px 14px rgba(201,168,106,.4);
+}
+.logo-text small{display:block;font-size:10px;font-weight:400;color:var(--gold2);letter-spacing:2px;line-height:1}
+.nav{display:flex;gap:4px;align-items:center}
+.nav a{
+  color:rgba(255,255,255,.78);padding:9px 14px;border-radius:9px;
+  font-size:14px;font-weight:500;transition:.25s;position:relative;
+}
+.nav a:hover,.nav a.active{color:#fff;background:rgba(255,255,255,.08)}
+.nav a.active{color:var(--gold2)}
+.header-actions{display:flex;align-items:center;gap:10px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:11px 22px;border-radius:11px;font-weight:600;font-size:14px;
+  transition:.28s;white-space:nowrap;
+}
+.btn-gold{background:linear-gradient(135deg,var(--gold),#b08f52);color:#fff;box-shadow:0 6px 20px rgba(201,168,106,.32)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(201,168,106,.45)}
+.btn-ghost{color:#fff;border:1.5px solid rgba(255,255,255,.28)}
+.btn-ghost:hover{background:rgba(255,255,255,.1);border-color:var(--gold)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy3);transform:translateY(-2px)}
+.btn-outline{background:transparent;border:1.5px solid var(--gold);color:var(--gold)}
+.btn-outline:hover{background:var(--gold);color:#fff}
+.btn-block{width:100%}
+.btn-lg{padding:15px 32px;font-size:15px;border-radius:13px}
+.menu-toggle{display:none;color:#fff;font-size:26px;width:44px;height:44px;border-radius:10px;align-items:center;justify-content:center}
+.menu-toggle:hover{background:rgba(255,255,255,.1)}
+
+.mobile-menu{
+  position:fixed;top:74px;right:0;left:0;bottom:0;background:var(--navy);
+  z-index:999;padding:24px 20px;overflow-y:auto;transform:translateX(100%);
+  transition:.35s cubic-bezier(.4,0,.2,1);
+}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu a{
+  display:block;color:#fff;padding:16px 18px;border-radius:12px;
+  font-size:16px;font-weight:500;margin-bottom:6px;border:1px solid rgba(255,255,255,.06);
+}
+.mobile-menu a:hover,.mobile-menu a.active{background:rgba(201,168,106,.15);color:var(--gold2);border-color:rgba(201,168,106,.3)}
+.mobile-menu .btn{margin-top:16px;width:100%}
+
+/* ===== Hero ===== */
+.hero{
+  position:relative;min-height:100vh;display:flex;align-items:center;
+  padding:120px 0 80px;
+  background:linear-gradient(180deg,rgba(14,26,43,.82),rgba(14,26,43,.9)),
+    url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1920&q=80') center/cover fixed;
+}
+.hero::after{
+  content:"";position:absolute;bottom:0;right:0;left:0;height:120px;
+  background:linear-gradient(transparent,var(--cream));pointer-events:none;
+}
+.hero-content{position:relative;z-index:2;max-width:900px;margin:0 auto;text-align:center;padding:0 20px}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;color:var(--gold2);
+  background:rgba(201,168,106,.12);border:1px solid rgba(201,168,106,.3);
+  padding:8px 18px;border-radius:50px;font-size:13px;margin-bottom:26px;
+}
+.hero h1{
+  color:#fff;font-size:clamp(30px,5.2vw,58px);font-weight:800;line-height:1.35;
+  margin-bottom:20px;letter-spacing:-.5px;
+}
+.hero h1 span{color:var(--gold2);position:relative}
+.hero p{color:rgba(255,255,255,.78);font-size:clamp(14px,1.6vw,17px);max-width:620px;margin:0 auto 40px}
+
+/* Search box */
+.search-box{
+  background:rgba(255,255,255,.97);border-radius:20px;padding:24px;
+  box-shadow:var(--shadow-lg);text-align:right;
+}
+.search-tabs{display:flex;gap:6px;margin-bottom:18px;border-bottom:1px solid var(--border);padding-bottom:14px;flex-wrap:wrap}
+.search-tab{padding:8px 18px;border-radius:9px;font-weight:600;font-size:13.5px;color:var(--muted);transition:.25s}
+.search-tab.active{background:var(--navy);color:#fff}
+.search-grid{display:grid;grid-template-columns:repeat(4,1fr) auto;gap:12px;align-items:end}
+.field{display:flex;flex-direction:column;gap:6px;text-align:right}
+.field label{font-size:12.5px;font-weight:600;color:var(--muted)}
+.field select,.field input{
+  padding:12px 14px;border:1.5px solid var(--border);border-radius:11px;
+  background:#fdfcf9;transition:.25s;color:var(--text);font-weight:500;
+}
+.field select:focus,.field input:focus{outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 4px rgba(201,168,106,.12)}
+
+/* ===== Sections ===== */
+.section{padding:90px 0}
+.section-head{text-align:center;margin-bottom:52px}
+.section-eyebrow{
+  display:inline-block;color:var(--gold);font-size:13px;font-weight:700;
+  letter-spacing:3px;margin-bottom:12px;position:relative;
+}
+.section-head h2{font-size:clamp(24px,3.5vw,38px);font-weight:800;color:var(--navy);line-height:1.4;margin-bottom:14px}
+.section-head p{color:var(--muted);max-width:620px;margin:0 auto;font-size:15px}
+
+/* Category chips */
+.cats{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:20px}
+.cat{
+  display:flex;align-items:center;gap:10px;padding:14px 24px;background:#fff;
+  border-radius:50px;font-weight:600;font-size:14px;color:var(--navy);
+  border:1.5px solid var(--border);transition:.28s;box-shadow:var(--shadow);
+}
+.cat:hover,.cat.active{background:var(--navy);color:#fff;border-color:var(--navy);transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.cat i{font-size:18px}
+
+/* Property card */
+.grid-props{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:26px}
+.prop-card{
+  background:#fff;border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);transition:.35s;cursor:pointer;
+  display:flex;flex-direction:column;position:relative;
+  border:1px solid rgba(230,226,217,.6);
+}
+.prop-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.prop-media{position:relative;height:230px;overflow:hidden}
+.prop-media img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.prop-card:hover .prop-media img{transform:scale(1.08)}
+.prop-badge{
+  position:absolute;top:14px;right:14px;background:rgba(14,26,43,.9);
+  color:#fff;padding:6px 14px;border-radius:50px;font-size:12px;font-weight:600;
+  backdrop-filter:blur(6px);
+}
+.prop-badge.rent{background:rgba(201,168,106,.95);color:#fff}
+.prop-badge.featured{top:14px;left:14px;right:auto;background:linear-gradient(135deg,var(--gold),#a8874a);color:#fff}
+.fav-btn{
+  position:absolute;bottom:14px;left:14px;width:42px;height:42px;border-radius:50%;
+  background:rgba(255,255,255,.95);display:grid;place-items:center;font-size:18px;
+  color:var(--navy);transition:.28s;backdrop-filter:blur(6px);
+}
+.fav-btn:hover{background:var(--gold);color:#fff;transform:scale(1.1)}
+.fav-btn.active{background:#e74c3c;color:#fff}
+.prop-body{padding:20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.prop-body h3{font-size:16.5px;font-weight:700;color:var(--navy);line-height:1.5}
+.prop-loc{color:var(--muted);font-size:13px;display:flex;align-items:center;gap:6px}
+.prop-specs{display:flex;gap:14px;flex-wrap:wrap;padding:12px 0;border-top:1px dashed var(--border);border-bottom:1px dashed var(--border);font-size:13px;color:var(--muted)}
+.prop-specs span{display:flex;align-items:center;gap:5px}
+.prop-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:6px}
+.price{font-weight:800;color:var(--navy);font-size:16px}
+.price small{display:block;font-size:11.5px;font-weight:500;color:var(--muted)}
+
+/* Stats */
+.stats{background:var(--navy);color:#fff;padding:70px 0;position:relative;overflow:hidden}
+.stats::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 20% 20%,rgba(201,168,106,.14),transparent 55%),
+  radial-gradient(circle at 85% 80%,rgba(201,168,106,.1),transparent 50%)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;z-index:2}
+.stat{text-align:center}
+.stat-num{font-size:clamp(30px,4.5vw,48px);font-weight:800;color:var(--gold2);line-height:1}
+.stat-label{color:rgba(255,255,255,.7);margin-top:12px;font-size:14px}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.step{
+  background:#fff;padding:36px 28px;border-radius:var(--radius);text-align:center;
+  box-shadow:var(--shadow);position:relative;transition:.3s;border:1px solid rgba(230,226,217,.6);
+}
+.step:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.step-num{
+  position:absolute;top:-22px;right:50%;transform:translateX(50%);
+  width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--gold),#a8874a);
+  color:#fff;display:grid;place-items:center;font-size:22px;font-weight:800;
+  box-shadow:0 8px 22px rgba(201,168,106,.42);
+}
+.step h4{font-size:17px;font-weight:700;color:var(--navy);margin:22px 0 10px}
+.step p{color:var(--muted);font-size:14px}
+
+/* Agents */
+.agent-card{
+  background:#fff;border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow);transition:.35s;text-align:center;padding-bottom:22px;
+  border:1px solid rgba(230,226,217,.6);
+}
+.agent-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.agent-photo{height:270px;overflow:hidden;position:relative}
+.agent-photo img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.agent-card:hover .agent-photo img{transform:scale(1.07)}
+.agent-card h4{font-size:17px;font-weight:700;color:var(--navy);margin:18px 0 4px}
+.agent-role{color:var(--gold);font-size:13px;font-weight:600}
+.agent-meta{color:var(--muted);font-size:13px;margin:10px 0 14px;padding:0 16px}
+.agent-contact{display:flex;gap:8px;justify-content:center;padding:0 16px}
+.agent-contact a{width:40px;height:40px;border-radius:11px;background:var(--cream);display:grid;place-items:center;color:var(--navy);transition:.25s}
+.agent-contact a:hover{background:var(--navy);color:#fff}
+
+/* Testimonials */
+.tstm{background:var(--cream2)}
+.tstm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tstm-card{
+  background:#fff;padding:30px;border-radius:var(--radius);box-shadow:var(--shadow);
+  position:relative;border:1px solid rgba(230,226,217,.6);
+}
+.tstm-card::before{content:"\201C";position:absolute;top:10px;left:22px;font-size:70px;color:var(--gold);opacity:.25;line-height:1}
+.tstm-text{color:var(--text);font-size:14.5px;margin-bottom:20px;position:relative;z-index:2}
+.tstm-user{display:flex;align-items:center;gap:12px;padding-top:16px;border-top:1px solid var(--border)}
+.tstm-user img{width:48px;height:48px;border-radius:50%;object-fit:cover}
+.tstm-user strong{display:block;color:var(--navy);font-size:14px}
+.tstm-user small{color:var(--muted);font-size:12px}
+.stars{color:var(--gold);font-size:14px;margin-bottom:12px}
+
+/* CTA */
+.cta{
+  background:linear-gradient(135deg,var(--navy),var(--navy3));color:#fff;
+  padding:70px 40px;border-radius:24px;text-align:center;position:relative;overflow:hidden;
+}
+.cta::before{content:"";position:absolute;top:-60%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(201,168,106,.2),transparent 65%)}
+.cta h3{font-size:clamp(22px,3vw,32px);font-weight:800;margin-bottom:14px;position:relative}
+.cta p{color:rgba(255,255,255,.75);margin-bottom:28px;max-width:560px;margin-inline:auto;position:relative}
+.cta .btn{position:relative}
+
+/* Footer */
+.footer{background:var(--navy);color:rgba(255,255,255,.72);padding:70px 0 0;margin-top:80px}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.5fr;gap:36px;padding-bottom:50px}
+.footer h5{color:#fff;font-size:16px;font-weight:700;margin-bottom:20px;position:relative;padding-bottom:12px}
+.footer h5::after{content:"";position:absolute;bottom:0;right:0;width:32px;height:2px;background:var(--gold)}
+.footer p,.footer li{font-size:13.5px;line-height:2.1}
+.footer ul{list-style:none}
+.footer ul li a{transition:.25s}
+.footer ul li a:hover{color:var(--gold2);padding-right:5px}
+.footer-contact li{display:flex;gap:10px;align-items:flex-start;margin-bottom:10px}
+.footer-contact i{color:var(--gold);margin-top:6px}
+.newsletter{display:flex;margin-top:14px;background:rgba(255,255,255,.06);border-radius:11px;overflow:hidden;border:1px solid rgba(255,255,255,.1)}
+.newsletter input{flex:1;background:transparent;border:none;color:#fff;padding:12px 14px;font-size:13px}
+.newsletter input::placeholder{color:rgba(255,255,255,.4)}
+.newsletter input:focus{outline:none}
+.newsletter button{background:var(--gold);color:#fff;padding:0 20px;font-weight:600;font-size:13px;transition:.25s}
+.newsletter button:hover{background:var(--gold2)}
+.socials{display:flex;gap:10px;margin-top:20px}
+.socials a{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.06);display:grid;place-items:center;color:#fff;transition:.28s;border:1px solid rgba(255,255,255,.08)}
+.socials a:hover{background:var(--gold);transform:translateY(-3px);border-color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding:22px 0;text-align:center;font-size:13px}
+
+/* ===== Page header ===== */
+.page-head{
+  padding:130px 0 60px;background:linear-gradient(180deg,var(--navy),var(--navy3));
+  color:#fff;text-align:center;position:relative;overflow:hidden;
+}
+.page-head::before{content:"";position:absolute;top:-40%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(201,168,106,.18),transparent 65%)}
+.page-head h1{font-size:clamp(26px,4vw,40px);font-weight:800;position:relative}
+.page-head p{color:rgba(255,255,255,.7);margin-top:10px;position:relative;font-size:14px}
+.breadcrumb{display:flex;gap:8px;justify-content:center;margin-top:18px;font-size:13px;color:rgba(255,255,255,.55);position:relative}
+.breadcrumb a:hover{color:var(--gold2)}
+
+/* ===== Listings page ===== */
+.listings-wrap{display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:start}
+.filters{
+  background:#fff;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);
+  position:sticky;top:100px;border:1px solid rgba(230,226,217,.6);
+}
+.filters h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.filter-group{margin-bottom:20px}
+.filter-group label{display:block;font-size:12.5px;font-weight:600;color:var(--muted);margin-bottom:8px}
+.filter-group select,.filter-group input{
+  width:100%;padding:11px 13px;border:1.5px solid var(--border);border-radius:10px;
+  background:#fdfcf9;font-size:13.5px;transition:.25s;
+}
+.filter-group select:focus,.filter-group input:focus{outline:none;border-color:var(--gold);background:#fff}
+.range-row{display:flex;gap:8px}
+.range-row input{flex:1}
+
+.listings-toolbar{
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+  background:#fff;padding:14px 20px;border-radius:var(--radius-sm);margin-bottom:22px;
+  box-shadow:var(--shadow);flex-wrap:wrap;border:1px solid rgba(230,226,217,.6);
+}
+.toolbar-info{font-size:14px;color:var(--muted)}
+.toolbar-info strong{color:var(--navy);font-size:16px}
+.toolbar-controls{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.toolbar-controls select{padding:9px 12px;border:1.5px solid var(--border);border-radius:9px;background:#fdfcf9;font-size:13px}
+.view-toggle{display:flex;background:var(--cream);border-radius:9px;padding:3px}
+.view-toggle button{width:36px;height:34px;border-radius:7px;color:var(--muted);transition:.25s;display:grid;place-items:center;font-size:16px}
+.view-toggle button.active{background:#fff;color:var(--navy);box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.filter-toggle{display:none}
+
+.list-view{display:flex;flex-direction:column;gap:16px}
+.list-view .prop-card{flex-direction:row;align-items:stretch}
+.list-view .prop-media{width:320px;height:auto;min-height:220px;flex-shrink:0}
+.list-view .prop-body{flex:1}
+
+.empty{
+  text-align:center;padding:70px 20px;background:#fff;border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+.empty-icon{font-size:60px;color:var(--border);margin-bottom:16px}
+.empty h3{color:var(--navy);margin-bottom:10px}
+.empty p{color:var(--muted);font-size:14px}
+
+/* ===== Property detail ===== */
+.detail-grid{display:grid;grid-template-columns:1fr 360px;gap:32px;align-items:start}
+.gallery{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);background:#fff}
+.gallery-main{height:480px;position:relative;background:#000;cursor:zoom-in}
+.gallery-main img{width:100%;height:100%;object-fit:cover}
+.gallery-thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:12px}
+.gallery-thumbs img{height:80px;width:100%;object-fit:cover;border-radius:10px;cursor:pointer;opacity:.6;transition:.28s}
+.gallery-thumbs img:hover,.gallery-thumbs img.active{opacity:1;outline:2px solid var(--gold)}
+
+.detail-card{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);margin-top:22px;border:1px solid rgba(230,226,217,.6)}
+.detail-card h2{font-size:22px;font-weight:800;color:var(--navy);margin-bottom:8px}
+.detail-loc{color:var(--muted);font-size:14px;display:flex;gap:6px;align-items:center;margin-bottom:18px}
+.detail-price-row{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-top:1px dashed var(--border);border-bottom:1px dashed var(--border);margin-bottom:22px;flex-wrap:wrap;gap:12px}
+.detail-price{font-size:26px;font-weight:800;color:var(--navy)}
+.detail-price small{display:block;font-size:12px;font-weight:500;color:var(--muted)}
+.code-chip{background:var(--cream);color:var(--muted);padding:7px 14px;border-radius:50px;font-size:12.5px;font-weight:600}
+
+.specs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-bottom:22px}
+.spec-item{
+  background:var(--cream);border-radius:12px;padding:14px;text-align:center;
+  border:1px solid var(--border);
+}
+.spec-item i{font-size:22px;color:var(--gold);display:block;margin-bottom:6px}
+.spec-item strong{display:block;color:var(--navy);font-size:15px;font-weight:700}
+.spec-item small{color:var(--muted);font-size:12px}
+
+.amenities{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:14px}
+.amenity{display:flex;align-items:center;gap:9px;padding:11px 14px;background:var(--cream);border-radius:10px;font-size:13.5px;border:1px solid var(--border)}
+.amenity i{color:var(--gold)}
+
+.sidebar-sticky{position:sticky;top:100px;display:flex;flex-direction:column;gap:20px}
+.agent-box{background:#fff;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);text-align:center;border:1px solid rgba(230,226,217,.6)}
+.agent-box img{width:90px;height:90px;border-radius:50%;object-fit:cover;margin:0 auto 14px;border:3px solid var(--gold)}
+.agent-box h4{color:var(--navy);font-size:17px;font-weight:700}
+.agent-box .role{color:var(--gold);font-size:13px;font-weight:600;margin-bottom:14px}
+.agent-box .phone{background:var(--cream);padding:10px;border-radius:10px;font-weight:700;color:var(--navy);margin-bottom:14px;direction:ltr;font-size:15px}
+
+.map-frame{width:100%;height:280px;border:0;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* ===== Forms ===== */
+.form-card{background:#fff;border-radius:var(--radius);padding:32px;box-shadow:var(--shadow);border:1px solid rgba(230,226,217,.6)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form-grid .full{grid-column:1/-1}
+.form-group{display:flex;flex-direction:column;gap:7px}
+.form-group label{font-size:13px;font-weight:600;color:var(--navy)}
+.form-group label .req{color:#e74c3c}
+.form-group input,.form-group select,.form-group textarea{
+  padding:12px 14px;border:1.5px solid var(--border);border-radius:11px;
+  background:#fdfcf9;transition:.25s;font-size:14px;color:var(--text);
+}
+.form-group textarea{resize:vertical;min-height:110px;line-height:1.8}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{
+  outline:none;border-color:var(--gold);background:#fff;box-shadow:0 0 0 4px rgba(201,168,106,.12);
+}
+.form-group input.err,.form-group select.err,.form-group textarea.err{border-color:#e74c3c;background:#fff5f5}
+.err-msg{color:#e74c3c;font-size:12px;min-height:0}
+
+/* Toast */
+.toast{
+  position:fixed;bottom:24px;right:24px;z-index:9999;
+  background:var(--navy);color:#fff;padding:14px 22px;border-radius:13px;
+  box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:10px;
+  font-size:14px;transform:translateY(120%);transition:.4s cubic-bezier(.4,0,.2,1);
+  max-width:340px;border-right:4px solid var(--gold);
+}
+.toast.show{transform:translateY(0)}
+.toast.success{border-right-color:#2ecc71}
+.toast.error{border-right-color:#e74c3c}
+
+/* Animations */
+.reveal{opacity:0;transform:translateY(30px);transition:.8s cubic-bezier(.4,0,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* Responsive */
+@media(max-width:1024px){
+  .nav{display:none}
+  .menu-toggle{display:flex}
+  .listings-wrap{grid-template-columns:1fr}
+  .filters{position:fixed;top:0;right:0;bottom:0;width:88%;max-width:360px;z-index:1100;
+    border-radius:0;overflow-y:auto;transform:translateX(100%);transition:.35s;box-shadow:-10px 0 40px rgba(0,0,0,.2)}
+  .filters.open{transform:translateX(0)}
+  .filters-close{display:block !important}
+  .filters-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1099;opacity:0;visibility:hidden;transition:.3s}
+  .filters-overlay.open{opacity:1;visibility:visible}
+  .filter-toggle{display:inline-flex}
+  .detail-grid{grid-template-columns:1fr}
+  .sidebar-sticky{position:static}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:30px}
+  .stats-grid{grid-template-columns:repeat(2,1fr);gap:34px}
+  .search-grid{grid-template-columns:1fr 1fr}
+  .search-grid .btn{grid-column:1/-1}
+  .steps,.tstm-grid{grid-template-columns:1fr}
+  .list-view .prop-card{flex-direction:column}
+  .list-view .prop-media{width:100%;height:220px;min-height:0}
+}
+@media(max-width:640px){
+  .section{padding:60px 0}
+  .header-inner{height:66px}
+  .mobile-menu{top:66px}
+  .logo{font-size:17px}
+  .logo-mark{width:36px;height:36px;font-size:17px}
+  .header-actions .btn-ghost{display:none}
+  .hero{padding:100px 0 60px;min-height:auto}
+  .search-box{padding:18px}
+  .search-grid{grid-template-columns:1fr}
+  .form-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .gallery-main{height:260px}
+  .gallery-thumbs{grid-template-columns:repeat(4,1fr)}
+  .gallery-thumbs img{height:60px}
+  .detail-price{font-size:20px}
+  .cta{padding:50px 22px}
+  .toast{right:14px;left:14px;bottom:14px;max-width:none}
+  .grid-props{grid-template-columns:1fr}
+  .cats{gap:8px}
+  .cat{padding:11px 18px;font-size:13px}
+}
+.filters-close{display:none;position:absolute;top:14px;left:14px;width:38px;height:38px;border-radius:10px;background:var(--cream);color:var(--navy);font-size:20px}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#/" class="logo" onclick="go('home')">
+      <div class="logo-mark">خ</div>
+      <div class="logo-text">خانه مدرن<small>MODERN HOME</small></div>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#/" data-route="home">صفحه اصلی</a>
+      <a href="#/listings?deal=buy" data-route="buy">خرید</a>
+      <a href="#/listings?deal=rent" data-route="rent">اجاره</a>
+      <a href="#/listings" data-route="listings">پروژه‌ها</a>
+      <a href="#/agents" data-route="agents">مشاوران</a>
+      <a href="#/about" data-route="about">درباره ما</a>
+      <a href="#/contact" data-route="contact">تماس با ما</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#/submit" class="btn btn-gold">ثبت ملک</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="منو">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#/" data-route="home">صفحه اصلی</a>
+  <a href="#/listings?deal=buy" data-route="buy">خرید</a>
+  <a href="#/listings?deal=rent" data-route="rent">اجاره</a>
+  <a href="#/listings" data-route="listings">پروژه‌ها</a>
+  <a href="#/agents" data-route="agents">مشاوران</a>
+  <a href="#/about" data-route="about">درباره ما</a>
+  <a href="#/contact" data-route="contact">تماس با ما</a>
+  <a href="#/submit" class="btn btn-gold">ثبت ملک</a>
+</div>
+
+<!-- ============ APP ============ -->
+<main id="app"></main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:#fff;margin-bottom:16px">
+          <div class="logo-mark">خ</div>
+          <div class="logo-text">خانه مدرن<small>MODERN HOME</small></div>
+        </div>
+        <p>آژانس املاک تخصصی خانه مدرن، با بیش از یک دهه تجربه در خرید، فروش، رهن و اجاره املاک لوکس، در کنار شماست تا بهترین انتخاب را تجربه کنید.</p>
+        <div class="socials">
+          <a href="#" aria-label="اینستاگرام">◉</a>
+          <a href="#" aria-label="تلگرام">✈</a>
+          <a href="#" aria-label="واتساپ">✆</a>
+          <a href="#" aria-label="لینکدین">in</a>
+        </div>
+      </div>
+      <div>
+        <h5>دسترسی سریع</h5>
+        <ul>
+          <li><a href="#/">صفحه اصلی</a></li>
+          <li><a href="#/listings">فهرست ملک‌ها</a></li>
+          <li><a href="#/agents">مشاوران ما</a></li>
+          <li><a href="#/about">درباره ما</a></li>
+          <li><a href="#/contact">تماس با ما</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>خدمات ما</h5>
+        <ul>
+          <li><a href="#/listings?deal=buy">خرید ملک</a></li>
+          <li><a href="#/listings?deal=rent">رهن و اجاره</a></li>
+          <li><a href="#/submit">ثبت ملک</a></li>
+          <li><a href="#/listings?type=villa">ویلا و باغ</a></li>
+          <li><a href="#/listings?type=commercial">املاک تجاری</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>خبرنامه</h5>
+        <p>جدیدترین فایل‌های ویژه را در ایمیل خود دریافت کنید.</p>
+        <form class="newsletter" onsubmit="subscribeNews(event)">
+          <input type="email" placeholder="ایمیل شما" required>
+          <button type="submit">عضویت</button>
+        </form>
+        <ul class="footer-contact" style="margin-top:20px">
+          <li><i>☎</i><span>۰۲۱-۲۲۶۸۴۵۹۰</span></li>
+          <li><i>✉</i><span>info@khane-modern.ir</span></li>
+          <li><i>⌂</i><span>تهران، خیابان ولیعصر، برج نگین، طبقه ۸</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© ۱۴۰۴ خانه مدرن — تمامی حقوق محفوظ است. طراحی و توسعه اختصاصی.</div>
+  </div>
+</footer>
+
+<div class="filters-overlay" id="filtersOverlay"></div>
+
+<script>
+/* ============================================================
+   DATA
+============================================================ */
+const AGENTS = [
+  {id:1,name:'امیر رضایی',role:'مشاور ارشد املاک لوکس',exp:'۱۲ سال سابقه',phone:'09121234567',img:'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80'},
+  {id:2,name:'سارا محمدی',role:'کارشناس آپارتمان‌های شمال تهران',exp:'۸ سال سابقه',phone:'09122345678',img:'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80'},
+  {id:3,name:'رضا کریمی',role:'متخصص ویلا و باغ',exp:'۱۵ سال سابقه',phone:'09123456789',img:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80'},
+  {id:4,name:'نگار احمدی',role:'مشاور سرمایه‌گذاری املاک',exp:'۹ سال سابقه',phone:'09124567890',img:'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80'}
+];
+
+const AMENITY_ICONS = {
+  'پارکینگ':'🅿','آسانسور':'⇕','انباری':'▤','استخر':'≈','سونا':'♨','جکوزی':'◉',
+  'روف گاردن':'🌿','لابی':'⌂','سیستم هوشمند':'⚙','نگهبانی ۲۴ ساعته':'🛡','سالن ورزش':'⚡',
+  'بالکن':'⌐','کولر گازی':'❄','پکیج':'🔥','دوربین مداربسته':'📹','آب و برق و گاز':'✓','درختکاری':'🌳'
+};
+
+const PROPERTIES = [
+  {
+    id:1,code:'HM-1001',title:'آپارتمان لوکس با ویو کوه در زعفرانیه',deal:'buy',type:'apartment',
+    district:'زعفرانیه',address:'تهران، زعفرانیه، خیابان مقدس اردبیلی، برج آرامیس',
+    area:245,rooms:4,floor:7,totalFloors:12,parking:2,elevator:true,storage:true,year:1401,
+    price:42000000000,deposit:0,rent:0,featured:true,agentId:1,
+    images:[
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80'
+    ],
+    amenities:['پارکینگ','آسانسور','انباری','استخر','سونا','جکوزی','روف گاردن','لابی','سیستم هوشمند','نگهبانی ۲۴ ساعته'],
+    description:'آپارتمانی مجلل در قلب زعفرانیه با نورگیری فوق‌العاده و ویوی بی‌نظیر به کوه‌های البرز. این واحد با متریال درجه یک اروپایی بازسازی شده و دارای آشپزخانه اوپن با جزیره، سالن پذیرایی بزرگ و اتاق مستر با حمام اختصاصی است. ساختمان دارای لابی مجلل، استخر، سالن ورزش و نگهبانی ۲۴ ساعته می‌باشد.',
+    coords:{lat:35.8048,lng:51.4155}
+  },
+  {
+    id:2,code:'HM-1002',title:'ویلای مدرن دوبلکس در لواسان با استخر',deal:'buy',type:'villa',
+    district:'لواسان',address:'لواسان بزرگ، خیابان امام خمینی، کوچه گلستان',
+    area:520,rooms:6,floor:1,totalFloors:2,parking:4,elevator:false,storage:true,year:1400,
+    price:78000000000,deposit:0,rent:0,featured:true,agentId:3,
+    images:[
+      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80'
+    ],
+    amenities:['پارکینگ','انباری','استخر','سونا','جکوزی','روف گاردن','سیستم هوشمند','نگهبانی ۲۴ ساعته','درختکاری','دوربین مداربسته'],
+    description:'ویلایی بی‌نظیر در بهترین موقعیت لواسان با طراحی معماری مدرن و محوطه‌سازی حرفه‌ای. دارای استخر روباز، آلاچیق، باغچه میوه و سیستم هوشمند روشنایی. مناسب سکونت دائمی یا اقامت آخر هفته با دسترسی آسان به امکانات شهری.',
+    coords:{lat:35.8185,lng:51.6305}
+  },
+  {
+    id:3,code:'HM-1003',title:'آپارتمان ۱۸۰ متری در سعادت‌آباد',deal:'rent',type:'apartment',
+    district:'سعادت‌آباد',address:'تهران، سعادت‌آباد، بلوار دریا، کوچه صراف',
+    area:180,rooms:3,floor:4,totalFloors:8,parking:2,elevator:true,storage:true,year:1397,
+    price:0,deposit:1500000000,rent:95000000,featured:true,agentId:2,
+    images:[
+      'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=1200&q=80'
+    ],
+    amenities:['پارکینگ','آسانسور','انباری','لابی','نگهبانی ۲۴ ساعته','بالکن','کولر گازی'],
+    description:'آپارتمانی دلباز و خوش‌نقشه در بهترین نقطه سعادت‌آباد. فول امکانات، بازسازی‌شده با پارکت لمینت و کاغذ دیواری جدید. دسترسی عالی به مترو، مراکز خرید و رستوران‌های معروف منطقه.',
+    coords:{lat:35.7858,lng:51.3745}
+  },
+  {
+    id:4,code:'HM-1004',title:'پنت‌هاوس اختصاصی در الهیه با روف‌گاردن',deal:'buy',type:'penthouse',
+    district:'الهیه',address:'تهران، الهیه، خیابان فرشته، برج الماس',
+    area:380,rooms:5,floor:18,totalFloors:18,parking:3,elevator:true,storage:true,year:1402,
+    price:95000000000,deposit:0,rent:0,featured:true,agentId:1,
+    images:[
+      'https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=80'
+    ],
+    amenities:['پارکینگ','آسانسور','انباری','استخر','سونا','جکوزی','روف گاردن','لابی','سیستم هوشمند','نگهبانی ۲۴ ساعته','سالن ورزش','دوربین مداربسته'],
+    description:'پنت‌هاوس لوکس و منحصر به فرد در برج الماس فرشته با ویو ۳۶۰ درجه تهران. دارای روف‌گاردن اختصاصی ۱۲۰ متری، استخر سرپوشیده، سالن بیلیارد و سینما خانگی. بهترین انتخاب برای سلیقه‌های خاص.',
+    coords:{lat:35.7898,lng:51.4218}
+  },
+  {
+    id:5,code:'HM-1005',title:'آپارتمان ۱۴۰ متری در جردن',deal:'rent',type:'apartment',
+    district:'جردن',address:'تهران، جردن، خیابان ناهید، پلاک ۴۲',
+    area:140,rooms:2,floor:3,totalFloors:6,parking:1,elevator:true,storage:true,year:1395,
+    price:0,deposit:800000000,rent:65000000,featured:false,agentId:2,
+    images:[
+      'https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80'
+    ],
+    amenities:['پارکینگ','آسانسور','انباری','بالکن','کولر گازی','نگهبانی ۲۴ ساعته'],
+    description:'واحدی نقلی، دلباز و کاملاً بازسازی‌شده در بهترین موقعیت جردن. مناسب زوج‌های جوان یا خانواده‌های کوچک. دسترسی پیاده به مترو و مراکز خرید.',
+    coords:{lat:35.7715,lng:51.4185}
+  },
+  {
+    id:6,code:'HM-1006',title:'زمین مسکونی ۱۰۰۰ متری در کردان',deal:'buy',type:'land',
+    district:'کردان',address:'کرج، کردان، جاده برغان، شهرک ویلایی',
+    area:1000,rooms:0,floor:0,totalFloors:0,parking:0,elevator:false,storage:false,year:0,
+    price:15000000000,deposit:0,rent:0,featured:false,agentId:3,
+    images:[
+      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=1200&q=80'
+    ],
+    amenities:['آب و برق و گاز','درختکاری'],
+    description:'زمین مسکونی با سند شش‌دانگ در شهرک ویلایی کردان. دارای آب، برق و گاز شهری، دیوارکشی کامل و دسترسی آسفالت. محیط آرام و خوش آب و هوا، مناسب ساخت ویلای شخصی.',
+    coords:{lat:35.9268,lng:50.8005}
+  },
+  {
+    id:7,code:'HM-1007',title:'دفتر اداری مدرن در ونک',deal:'rent',type:'commercial',
+    district:'ونک',address:'تهران، ونک، خیابان گاندی، برج نگین',
+    area:110,rooms:2,floor:10,totalFloors:20,parking:1,elevator:true,storage:false,year:1399,
+    price:0,deposit:1000000000,rent:150000000,featured:false,agentId:4,
+    images:[
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80'
+    ],
+    amenities:['پارکینگ','آسانسور','لابی','سیستم هوشمند','نگهبانی ۲۴ ساعته','دوربین مداربسته'],
+    description:'دفتر کار اداری با موقعیت عالی در برج نگین ونک. کف‌سازی، سقف کاذب، سیستم تهویه مرکزی و ویوی پانوراما. مناسب شرکت‌های نوپا، استارتاپ‌ها و دفاتر خدماتی.',
+    coords:{lat:35.7578,lng:51.4104}
+  },
+  {
+    id:8,code:'HM-1008',title:'آپارتمان ۲۰۰ متری در پاسداران',deal:'buy',type:'apartment',
+    district:'پاسداران',address:'تهران، پاسداران، خیابان بوستان، کوچه گلها',
+    area:200,rooms:3,floor:5,totalFloors:9,parking:2,elevator:true,storage:true,year:1398,
+    price:29000000000,deposit:0,rent:0,featured:false,agentId:2,
+    images:[
+      'https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80'
+    ],
+    amenities:['پارکینگ','آسانسور','انباری','لابی','نگهبانی ۲۴ ساعته','بالکن','پکیج'],
+    description:'آپارتمانی فوق‌العاده با نقشه‌ای اصولی و نورگیری بی‌نظیر در پاسداران. دارای دو پارکینگ، انبار بزرگ و بالکن رو به آفتاب. دسترسی آسان به بزرگراه صدر و خیابان پاسداران.',
+    coords:{lat:35.7847,lng:51.4612}
+  },
+  {
+    id:9,code:'HM-1009',title:'ویلای دوبلکس در کردان با محوطه بزرگ',deal:'buy',type:'villa',
+    district:'کردان',address:'کرج، کردان، شهرک سرو، خیابان سروستان',
+    area:340,rooms:4,floor:1,totalFloors:2,parking:2,elevator:false,storage:true,year:1399,
+    price:35000000000,deposit:0,rent:0,featured:false,agentId:3,
+    images:[
+      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80'
+    ],
+    amenities:['پارکینگ','انباری','استخر','روف گاردن','سیستم هوشمند','درختکاری','دوربین مداربسته'],
+    description:'ویلای دوبلکس با طراحی مدرن در شهرک سرو کردان. محوطه‌سازی کامل، استخر فصلی، آلاچیق چوبی و باغچه میوه. سیستم گرمایش از کف و هوشمندسازی کامل روشنایی.',
+    coords:{lat:35.9182,lng:50.8152}
+  }
+];
+
+/* ============================================================
+   HELPERS
+============================================================ */
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+const toFa = n => Number(n).toLocaleString('fa-IR');
+const toFaDigits = s => String(s).replace(/\d/g, d => '۰۱۲۳۴۵۶۷۸۹'[d]);
+
+function formatPrice(p){
+  if(!p) return '—';
+  if(p >= 1e9){
+    const v = p / 1e9;
+    return toFa(v % 1 === 0 ? v : v.toFixed(1)) + ' میلیارد';
+  }
+  if(p >= 1e6){
+    const v = p / 1e6;
+    return toFa(v % 1 === 0 ? v : v.toFixed(0)) + ' میلیون';
+  }
+  return toFa(p);
+}
+
+const TYPE_LABEL = {apartment:'آپارتمان',villa:'ویلا',penthouse:'پنت‌هاوس',land:'زمین',commercial:'تجاری'};
+const DEAL_LABEL = {buy:'خرید',rent:'رهن و اجاره'};
+
+function propPriceText(p){
+  if(p.deal === 'buy') return formatPrice(p.price) + ' تومان';
+  return formatPrice(p.deposit) + ' ودیعه';
+}
+function propPriceSub(p){
+  if(p.deal === 'buy') return '';
+  return formatPrice(p.rent) + ' تومان اجاره';
+}
+
+/* ============================================================
+   STATE
+============================================================ */
+const state = {
+  route:'home',
+  favorites: JSON.parse(localStorage.getItem('hm_favs') || '[]'),
+  filters:{deal:'all',type:'all',q:'',district:'all',rooms:'all',minArea:0,maxArea:99999,sort:'newest',view:'grid',favOnly:false},
+  galleryIdx:0
+};
+
+function saveFavs(){ localStorage.setItem('hm_favs', JSON.stringify(state.favorites)); }
+function isFav(id){ return state.favorites.includes(id); }
+function toggleFav(id, e){
+  if(e) e.stopPropagation();
+  const i = state.favorites.indexOf(id);
+  if(i > -1){ state.favorites.splice(i,1); toast('از علاقه‌مندی‌ها حذف شد','','info'); }
+  else { state.favorites.push(id); toast('به علاقه‌مندی‌ها اضافه شد','','success'); }
+  saveFavs();
+  rerender();
+}
+
+/* ============================================================
+   TOAST
+============================================================ */
+function toast(msg, sub, type='success'){
+  const el = document.createElement('div');
+  el.className = 'toast ' + type;
+  el.innerHTML = `<span style="font-size:20px">${type==='success'?'✓':type==='error'?'!':'ℹ'}</span><span>${msg}</span>`;
+  document.body.appendChild(el);
+  requestAnimationFrame(()=> el.classList.add('show'));
+  setTimeout(()=>{ el.classList.remove('show'); setTimeout(()=> el.remove(),400); }, 3200);
+}
+
+/* ============================================================
+   ROUTER
+============================================================ */
+function go(route){ location.hash = '#/' + (route || ''); }
+
+function parseHash(){
+  const h = location.hash.replace(/^#\/?/, '') || 'home';
+  const [path, query] = h.split('?');
+  const parts = path.split('/').filter(Boolean);
+  const params = {};
+  if(query) query.split('&').forEach(kv=>{ const [k,v]=kv.split('='); params[decodeURIComponent(k)]=decodeURIComponent(v||''); });
+  return { path: parts[0] || 'home', id: parts[1] ? Number(parts[1]) : null, params };
+}
+
+function handleRoute(){
+  const { path, id, params } = parseHash();
+  state.route = path;
+  state.galleryIdx = 0;
+
+  // apply filters from query
+  if(path === 'listings'){
+    if(params.deal) state.filters.deal = params.deal;
+    if(params.type) state.filters.type = params.type;
+    if(params.district) state.filters.district = params.district;
+    if(params.q) state.filters.q = params.q;
+  }
+
+  window.scrollTo({top:0, behavior:'instant'});
+  rerender();
+  updateActiveNav(path);
+  closeMobileMenu();
+}
+
+function updateActiveNav(path){
+  $$('[data-route]').forEach(a=>{
+    a.classList.remove('active');
+    const r = a.dataset.route;
+    if(r === path) a.classList.add('active');
+  });
+}
+
+/* ============================================================
+   RENDER ROUTER
+============================================================ */
+function rerender(){
+  const app = $('#app');
+  const { path, id } = parseHash();
+  let html = '';
+  switch(path){
+    case 'listings': html = renderListings(); break;
+    case 'property': html = renderDetail(id); break;
+    case 'agents': html = renderAgentsPage(); break;
+    case 'about': html = renderAbout(); break;
+    case 'contact': html = renderContact(); break;
+    case 'submit': html = renderSubmit(); break;
+    case 'home':
+    default: html = renderHome(); break;
+  }
+  app.innerHTML = html;
+  initReveal();
+  initStatsCounters();
+  if(path === 'listings') renderListingsBody();
+}
+
+/* ============================================================
+   HOME
+============================================================ */
+function renderHome(){
+  const featured = PROPERTIES.filter(p=>p.featured).slice(0,3);
+  const latest = [...PROPERTIES].sort((a,b)=>b.id-a.id).slice(0,6);
+  return `
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">✦ بیش از ۱۲ سال تجربه در بازار املاک لوکس</div>
+      <h1>خانه‌ای که می‌خواهید، <span>اینجاست</span></h1>
+      <p>با خانه مدرن، تجربه‌ای متفاوت از خرید، فروش، رهن و اجاره املاک لوکس در بهترین نقاط تهران داشته باشید. مشاوره تخصصی، فایل‌های منتخب و خدمات حرفه‌ای.</p>
+
+      <div class="search-box">
+        <div class="search-tabs" id="searchTabs">
+          <button class="search-tab active" data-deal="buy">خرید</button>
+          <button class="search-tab" data-deal="rent">رهن و اجاره</button>
+          <button class="search-tab" data-deal="all">همه</button>
+        </div>
+        <div class="search-grid">
+          <div class="field">
+            <label>نوع ملک</label>
+            <select id="hsType">
+              <option value="all">همه انواع</option>
+              <option value="apartment">آپارتمان</option>
+              <option value="villa">ویلا</option>
+              <option value="penthouse">پنت‌هاوس</option>
+              <option value="land">زمین</option>
+              <option value="commercial">تجاری</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>منطقه</label>
+            <select id="hsDistrict">
+              <option value="all">همه مناطق</option>
+              ${[...new Set(PROPERTIES.map(p=>p.district))].map(d=>`<option value="${d}">${d}</option>`).join('')}
+            </select>
+          </div>
+          <div class="field">
+            <label>حداکثر قیمت</label>
+            <select id="hsMax">
+              <option value="0">بدون محدودیت</option>
+              <option value="20000000000">تا ۲۰ میلیارد</option>
+              <option value="40000000000">تا ۴۰ میلیارد</option>
+              <option value="60000000000">تا ۶۰ میلیارد</option>
+              <option value="100000000000">بیشتر از ۶۰ میلیارد</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>متراژ (متر)</label>
+            <input type="number" id="hsArea" placeholder="مثلاً ۱۵۰" min="0">
+          </div>
+          <button class="btn btn-gold btn-lg" onclick="heroSearch()">🔍 جست‌وجو</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section" style="padding-bottom:40px">
+    <div class="container">
+      <div class="cats reveal">
+        <a class="cat" href="#/listings?deal=buy"><i>🏠</i> خرید</a>
+        <a class="cat" href="#/listings?deal=rent"><i>🔑</i> رهن و اجاره</a>
+        <a class="cat" href="#/listings?type=villa"><i>🏡</i> ویلا</a>
+        <a class="cat" href="#/listings?type=apartment"><i>🏢</i> آپارتمان</a>
+        <a class="cat" href="#/listings?type=land"><i>🌱</i> زمین</a>
+        <a class="cat" href="#/listings?type=commercial"><i>🏬</i> تجاری</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured -->
+  <section class="section" style="padding-top:30px">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">فایل‌های ویژه</span>
+        <h2>ملک‌های ویژه خانه مدرن</h2>
+        <p>منتخبی از بهترین و لوکس‌ترین فایل‌های موجود، انتخاب‌شده توسط تیم کارشناسی ما.</p>
+      </div>
+      <div class="grid-props">
+        ${featured.map(cardHTML).join('')}
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat"><div class="stat-num" data-count="1250">۰</div><div class="stat-label">فایل فعال</div></div>
+        <div class="stat"><div class="stat-num" data-count="3400">۰</div><div class="stat-label">معامله موفق</div></div>
+        <div class="stat"><div class="stat-num" data-count="45">۰</div><div class="stat-label">مشاور حرفه‌ای</div></div>
+        <div class="stat"><div class="stat-num" data-count="8500">۰</div><div class="stat-label">مشتری راضی</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">تازه‌ها</span>
+        <h2>جدیدترین فایل‌ها</h2>
+        <p>آخرین ملک‌های اضافه‌شده به مجموعه خانه مدرن را ببینید.</p>
+      </div>
+      <div class="grid-props">
+        ${latest.map(cardHTML).join('')}
+      </div>
+      <div style="text-align:center;margin-top:44px">
+        <a href="#/listings" class="btn btn-outline btn-lg">مشاهده همه ملک‌ها ←</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About brief -->
+  <section class="section" style="background:var(--cream2)">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center" class="reveal">
+        <div>
+          <span class="section-eyebrow">درباره خانه مدرن</span>
+          <h2 style="font-size:clamp(24px,3vw,34px);color:var(--navy);margin:12px 0 20px;line-height:1.4">انتخابی مطمئن برای زندگی لوکس</h2>
+          <p style="color:var(--muted);margin-bottom:16px">خانه مدرن با تیمی از مشاوران باتجربه و متخصص، خدمات کامل خرید، فروش، رهن و اجاره املاک لوکس را در بهترین نقاط تهران ارائه می‌دهد.</p>
+          <p style="color:var(--muted);margin-bottom:24px">ما با تکیه بر شناخت دقیق بازار و شفافیت کامل در معاملات، تجربه‌ای آرام، امن و حرفه‌ای را برای شما رقم می‌زنیم.</p>
+          <a href="#/about" class="btn btn-navy">بیشتر بدانید</a>
+        </div>
+        <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg)">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80" alt="نمای داخلی دفتر آژانس املاک خانه مدرن" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">فرایند کار</span>
+        <h2>در سه گام به خانه رویایی خود برسید</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><div class="step-num">۱</div><h4>مشاوره و انتخاب</h4><p>با کارشناسان ما تماس بگیرید و نیاز خود را مطرح کنید تا بهترین فایل‌ها را برایتان انتخاب کنیم.</p></div>
+        <div class="step reveal"><div class="step-num">۲</div><h4>بازدید حضوری</h4><p>در زمان دلخواه، همراه مشاور اختصاصی از ملک‌های منتخب بازدید کنید.</p></div>
+        <div class="step reveal"><div class="step-num">۳</div><h4>عقد قرارداد</h4><p>با اطمینان کامل و پس از بررسی‌های حقوقی، قرارداد را امضا کنید و به خانه جدید خوش آمدید.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agents -->
+  <section class="section" style="background:var(--cream2)">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">تیم ما</span>
+        <h2>مشاوران متخصص</h2>
+        <p>با بهترین مشاوران خانه مدرن آشنا شوید.</p>
+      </div>
+      <div class="grid-props" style="grid-template-columns:repeat(auto-fill,minmax(240px,1fr))">
+        ${AGENTS.map(a=>`
+          <div class="agent-card reveal">
+            <div class="agent-photo"><img src="${a.img}" alt="تصویر ${a.name}" loading="lazy"></div>
+            <h4>${a.name}</h4>
+            <div class="agent-role">${a.role}</div>
+            <div class="agent-meta">${a.exp}</div>
+            <div class="agent-contact">
+              <a href="tel:${a.phone}" title="تماس">☎</a>
+              <a href="https://wa.me/98${a.phone.slice(1)}" target="_blank" title="واتساپ">✆</a>
+              <a href="#/agents" title="پروفایل">◉</a>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section tstm">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-eyebrow">نظرات مشتریان</span>
+        <h2>تجربه‌ای که به آن افتخار می‌کنیم</h2>
+      </div>
+      <div class="tstm-grid">
+        <div class="tstm-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="tstm-text">از انتخاب تا امضای قرارداد، تیم خانه مدرن نهایت دقت و پیگیری را داشتند. خانه‌ای که می‌خواستم را با بهترین قیمت پیدا کردند.</p>
+          <div class="tstm-user"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="تصویر آقای مرادی"><div><strong>آقای مرادی</strong><small>خریدار آپارتمان زعفرانیه</small></div></div>
+        </div>
+        <div class="tstm-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="tstm-text">تجربه بسیار خوبی بود. مشاور خانم محمدی صبورانه همه سوالاتم را جواب دادند و کمک کردند ملک مناسب برای اجاره پیدا کنم.</p>
+          <div class="tstm-user"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="تصویر خانم رضایی"><div><strong>خانم رضایی</strong><small>مستأجر آپارتمان جردن</small></div></div>
+        </div>
+        <div class="tstm-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="tstm-text">برای فروش ویلامون از خانه مدرن کمک گرفتم. در کمتر از یک ماه با قیمت مناسب به فروش رسید. حرفه‌ای و شفاف بودند.</p>
+          <div class="tstm-user"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" alt="تصویر آقای کریمی"><div><strong>آقای کریمی</strong><small>فروشنده ویلا لواسان</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta reveal">
+        <h3>آماده پیدا کردن خانه رویایی خود هستید؟</h3>
+        <p>همین حالا با کارشناسان خانه مدرن تماس بگیرید یا درخواست مشاوره ثبت کنید تا بهترین انتخاب را تجربه کنید.</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative">
+          <a href="#/contact" class="btn btn-gold btn-lg">درخواست مشاوره رایگان</a>
+          <a href="#/listings" class="btn btn-ghost btn-lg" style="border-color:rgba(255,255,255,.4)">مشاهده ملک‌ها</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  `;
+}
+
+function heroSearch(){
+  const tabs = document.querySelector('.search-tab.active');
+  const deal = tabs ? tabs.dataset.deal : 'all';
+  const type = $('#hsType').value;
+  const district = $('#hsDistrict').value;
+  const max = $('#hsMax').value;
+  const area = $('#hsArea').value;
+  const q = new URLSearchParams();
+  if(deal && deal !== 'all') q.set('deal', deal);
+  if(type !== 'all') q.set('type', type);
+  if(district !== 'all') q.set('district', district);
+  if(area) q.set('q', area);
+  if(max !== '0') q.set('max', max);
+  location.hash = '#/listings' + (q.toString() ? '?' + q.toString() : '');
+}
+
+/* ============================================================
+   PROPERTY CARD
+============================================================ */
+function cardHTML(p){
+  const fav = isFav(p.id);
+  return `
+  <div class="prop-card reveal" onclick="location.hash='#/property/${p.id}'">
+    <div class="prop-media">
+      <img src="${p.images[0]}" alt="${p.title}" loading="lazy">
+      ${p.featured ? '<span class="prop-badge featured">ویژه</span>' : ''}
+      <span class="prop-badge ${p.deal==='rent'?'rent':''}">${DEAL_LABEL[p.deal]}</span>
+      <button class="fav-btn ${fav?'active':''}" onclick="toggleFav(${p.id}, event)" title="علاقه‌مندی">${fav?'♥':'♡'}</button>
+    </div>
+    <div class="prop-body">
+      <h3>${p.title}</h3>
+      <div class="prop-loc">📍 ${p.district} — ${p.address.split('،').slice(-1)[0].trim()}</div>
+      <div class="prop-specs">
+        <span>▭ ${toFa(p.area)} متر</span>
+        ${p.rooms ? `<span>🛏 ${toFa(p.rooms)} خواب</span>` : ''}
+        ${p.parking ? `<span>🅿 ${toFa(p.parking)} پارکینگ</span>` : ''}
+        ${p.elevator ? '<span>⇕ آسانسور</span>' : ''}
+      </div>
+      <div class="prop-foot">
+        <div class="price">${propPriceText(p)}<small>${propPriceSub(p)}</small></div>
+        <span style="color:var(--gold);font-weight:600;font-size:13px">جزئیات ←</span>
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ============================================================
+   LISTINGS PAGE
+============================================================ */
+function renderListings(){
+  const districts = [...new Set(PROPERTIES.map(p=>p.district))];
+  return `
+  <div class="page-head">
+    <div class="container">
+      <h1>فهرست ملک‌ها</h1>
+      <p>با استفاده از فیلترها، بهترین ملک را پیدا کنید.</p>
+      <div class="breadcrumb"><a href="#/">خانه</a> <span>/</span> <span>فهرست ملک‌ها</span></div>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top:50px">
+    <div class="container">
+      <div class="listings-wrap">
+        <aside class="filters" id="filters">
+          <button class="filters-close" onclick="closeFilters()">✕</button>
+          <h3>فیلترها <button onclick="resetFilters()" style="font-size:12px;color:var(--gold);font-weight:600">پاک کردن</button></h3>
+
+          <div class="filter-group">
+            <label>نوع معامله</label>
+            <select id="fDeal" onchange="applyFilter('deal',this.value)">
+              <option value="all">همه</option>
+              <option value="buy">خرید</option>
+              <option value="rent">رهن و اجاره</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>نوع ملک</label>
+            <select id="fType" onchange="applyFilter('type',this.value)">
+              <option value="all">همه</option>
+              <option value="apartment">آپارتمان</option>
+              <option value="villa">ویلا</option>
+              <option value="penthouse">پنت‌هاوس</option>
+              <option value="land">زمین</option>
+              <option value="commercial">تجاری</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>منطقه</label>
+            <select id="fDistrict" onchange="applyFilter('district',this.value)">
+              <option value="all">همه مناطق</option>
+              ${districts.map(d=>`<option value="${d}">${d}</option>`).join('')}
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>تعداد خواب</label>
+            <select id="fRooms" onchange="applyFilter('rooms',this.value)">
+              <option value="all">همه</option>
+              <option value="1">۱+</option>
+              <option value="2">۲+</option>
+              <option value="3">۳+</option>
+              <option value="4">۴+</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>متراژ (متر)</label>
+            <div class="range-row">
+              <input type="number" id="fMinArea" placeholder="از" min="0" oninput="applyFilter('minArea',this.value)">
+              <input type="number" id="fMaxArea" placeholder="تا" min="0" oninput="applyFilter('maxArea',this.value)">
+            </div>
+          </div>
+          <div class="filter-group">
+            <label>کد یا عنوان ملک</label>
+            <input type="text" id="fQ" placeholder="جست‌وجو..." oninput="applyFilter('q',this.value)">
+          </div>
+          <div class="filter-group">
+            <label style="display:flex;align-items:center;gap:8px;cursor:pointer">
+              <input type="checkbox" id="fFav" style="width:auto" onchange="applyFilter('favOnly',this.checked)"> فقط علاقه‌مندی‌ها
+            </label>
+          </div>
+        </aside>
+
+        <div>
+          <div class="listings-toolbar">
+            <div class="toolbar-info"><strong id="resultCount">۰</strong> ملک پیدا شد</div>
+            <div class="toolbar-controls">
+              <button class="btn btn-outline filter-toggle" onclick="openFilters()">⚙ فیلترها</button>
+              <select id="fSort" onchange="applyFilter('sort',this.value)">
+                <option value="newest">جدیدترین</option>
+                <option value="cheap">ارزان‌ترین</option>
+                <option value="expensive">گران‌ترین</option>
+                <option value="area">بزرگ‌ترین متراژ</option>
+              </select>
+              <div class="view-toggle">
+                <button id="viewGrid" class="active" onclick="setView('grid')" title="شبکه‌ای">▦</button>
+                <button id="viewList" onclick="setView('list')" title="فهرستی">☰</button>
+              </div>
+            </div>
+          </div>
+          <div id="listingsBody"></div>
+        </div>
+      </div>
+    </div>
+  </section>`;
+}
+
+function renderListingsBody(){
+  const f = state.filters;
+  let list = PROPERTIES.filter(p=>{
+    if(f.deal !== 'all' && p.deal !== f.deal) return false;
+    if(f.type !== 'all' && p.type !== f.type) return false;
+    if(f.district !== 'all' && p.district !== f.district) return false;
+    if(f.rooms !== 'all' && (p.rooms || 0) < Number(f.rooms)) return false;
+    if(Number(f.minArea) && p.area < Number(f.minArea)) return false;
+    if(Number(f.maxArea) && p.area > Number(f.maxArea)) return false;
+    if(f.favOnly && !isFav(p.id)) return false;
+    if(f.q){
+      const q = f.q.toString();
+      const blob = (p.title + ' ' + p.code + ' ' + p.district + ' ' + p.address).toLowerCase();
+      if(!blob.includes(q.toLowerCase()) && !blob.includes(toFaDigits(q))) return false;
+    }
+    return true;
+  });
+
+  if(f.sort === 'cheap') list.sort((a,b)=> (a.deal==='buy'?a.price:a.deposit) - (b.deal==='buy'?b.price:b.deposit));
+  else if(f.sort === 'expensive') list.sort((a,b)=> (b.deal==='buy'?b.price:b.deposit) - (a.deal==='buy'?a.price:a.deposit));
+  else if(f.sort === 'area') list.sort((a,b)=> b.area - a.area);
+  else list.sort((a,b)=> b.id - a.id);
+
+  const countEl = $('#resultCount');
+  if(countEl) countEl.textContent = toFa(list.length);
+
+  // sync filter inputs with state
+  const map = {fDeal:'deal',fType:'type',fDistrict:'district',fRooms:'rooms',fQ:'q',fMinArea:'minArea',fMaxArea:'maxArea',fSort:'sort'};
+  Object.entries(map).forEach(([id,k])=>{ const el=document.getElementById(id); if(el && el.value != state.filters[k]) el.value = state.filters[k]; });
+  const favBox = $('#fFav'); if(favBox) favBox.checked = !!state.filters.favOnly;
+
+  const body = $('#listingsBody');
+  if(!body) return;
+
+  if(!list.length){
+    body.innerHTML = `<div class="empty"><div class="empty-icon">🔍</div><h3>ملکی پیدا نشد</h3><p>فیلترها را تغییر دهید یا معیارهای دیگری را امتحان کنید.</p><button class="btn btn-gold" style="margin-top:18px" onclick="resetFilters()">پاک کردن فیلترها</button></div>`;
+    return;
+  }
+
+  body.className = state.filters.view === 'list' ? 'list-view' : 'grid-props';
+  body.innerHTML = list.map(cardHTML).join('');
+  initReveal();
+}
+
+function applyFilter(key, value){
+  if(['minArea','maxArea'].includes(key)) value = Number(value) || 0;
+  state.filters[key] = value;
+  renderListingsBody();
+}
+function setView(v){
+  state.filters.view = v;
+  $('#viewGrid').classList.toggle('active', v==='grid');
+  $('#viewList').classList.toggle('active', v==='list');
+  renderListingsBody();
+}
+function resetFilters(){
+  state.filters = {deal:'all',type:'all',q:'',district:'all',rooms:'all',minArea:0,maxArea:99999,sort:'newest',view:state.filters.view,favOnly:false};
+  renderListingsBody();
+}
+function openFilters(){ $('#filters').classList.add('open'); $('#filtersOverlay').classList.add('open'); }
+function closeFilters(){ $('#filters').classList.remove('open'); $('#filtersOverlay').classList.remove('open'); }
+
+/* ============================================================
+   DETAIL
+============================================================ */
+function renderDetail(id){
+  const p = PROPERTIES.find(x=>x.id===id);
+  if(!p) return `<section class="section"><div class="container"><div class="empty"><h3>ملک مورد نظر یافت نشد</h3><p>ممکن است این ملک حذف یا فروخته شده باشد.</p><a href="#/listings" class="btn btn-gold" style="margin-top:18px">بازگشت به فهرست</a></div></div></section>`;
+  const agent = AGENTS.find(a=>a.id===p.agentId) || AGENTS[0];
+  const similar = PROPERTIES.filter(x=>x.id!==p.id && (x.type===p.type || x.district===p.district)).slice(0,3);
+
+  return `
+  <div class="page-head" style="padding:120px 0 40px">
+    <div class="container">
+      <div class="breadcrumb" style="margin-top:0"><a href="#/">خانه</a><span>/</span><a href="#/listings">ملک‌ها</a><span>/</span><span>${p.code}</span></div>
+    </div>
+  </div>
+  <section class="section" style="padding-top:30px">
+    <div class="container">
+      <div class="detail-grid">
+        <div>
+          <div class="gallery">
+            <div class="gallery-main" id="galleryMain">
+              <img id="mainImg" src="${p.images[0]}" alt="تصویر اصلی ${p.title}">
+            </div>
+            <div class="gallery-thumbs" id="galleryThumbs">
+              ${p.images.map((src,i)=>`<img src="${src}" alt="تصویر ${toFa(i+1)} از ${p.title}" class="${i===0?'active':''}" onclick="setGallery(${i}, ${p.id})">`).join('')}
+            </div>
+          </div>
+
+          <div class="detail-card">
+            <h2>${p.title}</h2>
+            <div class="detail-loc">📍 ${p.address}</div>
+            <div class="detail-price-row">
+              <div>
+                <div class="detail-price">${propPriceText(p)}<small>${propPriceSub(p)}</small></div>
+              </div>
+              <span class="code-chip">کد ملک: ${p.code}</span>
+            </div>
+
+            <h4 style="color:var(--navy);margin-bottom:14px;font-size:16px">مشخصات ملک</h4>
+            <div class="specs-grid">
+              <div class="spec-item"><i>▭</i><strong>${toFa(p.area)} متر</strong><small>متراژ</small></div>
+              ${p.rooms ? `<div class="spec-item"><i>🛏</i><strong>${toFa(p.rooms)}</strong><small>خواب</small></div>`:''}
+              ${p.floor ? `<div class="spec-item"><i>⬆</i><strong>${toFa(p.floor)} از ${toFa(p.totalFloors)}</strong><small>طبقه</small></div>`:''}
+              ${p.parking ? `<div class="spec-item"><i>🅿</i><strong>${toFa(p.parking)}</strong><small>پارکینگ</small></div>`:''}
+              <div class="spec-item"><i>⇕</i><strong>${p.elevator?'دارد':'ندارد'}</strong><small>آسانسور</small></div>
+              <div class="spec-item"><i>▤</i><strong>${p.storage?'دارد':'ندارد'}</strong><small>انباری</small></div>
+              ${p.year ? `<div class="spec-item"><i>📅</i><strong>${toFa(p.year)}</strong><small>سال ساخت</small></div>`:''}
+              <div class="spec-item"><i>🏷</i><strong>${TYPE_LABEL[p.type]}</strong><small>نوع ملک</small></div>
+            </div>
+
+            <h4 style="color:var(--navy);margin:26px 0 10px;font-size:16px">توضیحات</h4>
+            <p style="color:var(--muted);text-align:justify">${p.description}</p>
+
+            <h4 style="color:var(--navy);margin:26px 0 10px;font-size:16px">امکانات</h4>
+            <div class="amenities">
+              ${p.amenities.map(a=>`<div class="amenity"><i>${AMENITY_ICONS[a]||'✓'}</i>${a}</div>`).join('')}
+            </div>
+
+            <h4 style="color:var(--navy);margin:26px 0 10px;font-size:16px">موقعیت روی نقشه</h4>
+            <iframe class="map-frame" loading="lazy"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=${p.coords.lng-0.01},${p.coords.lat-0.008},${p.coords.lng+0.01},${p.coords.lat+0.008}&layer=mapnik&marker=${p.coords.lat},${p.coords.lng}"></iframe>
+          </div>
+        </div>
+
+        <div class="sidebar-sticky">
+          <div class="agent-box">
+            <img src="${agent.img}" alt="تصویر ${agent.name}">
+            <h4>${agent.name}</h4>
+            <div class="role">${agent.role}</div>
+            <div class="phone">${toFaDigits(agent.phone)}</div>
+            <a href="tel:${agent.phone}" class="btn btn-navy btn-block" style="margin-bottom:8px">☎ تماس با مشاور</a>
+            <a href="https://wa.me/98${agent.phone.slice(1)}" target="_blank" class="btn btn-outline btn-block" style="margin-bottom:16px">✆ واتساپ</a>
+            <div style="border-top:1px dashed var(--border);padding-top:16px">
+              <h4 style="font-size:14px;color:var(--navy);margin-bottom:10px;text-align:right">درخواست بازدید</h4>
+              <form onsubmit="requestVisit(event, '${p.code}')" style="display:flex;flex-direction:column;gap:8px">
+                <input type="text" placeholder="نام شما" required style="padding:11px 13px;border:1.5px solid var(--border);border-radius:10px;background:#fdfcf9">
+                <input type="tel" placeholder="شماره تماس" required pattern="09[0-9]{9}" title="شماره موبایل صحیح وارد کنید" style="padding:11px 13px;border:1.5px solid var(--border);border-radius:10px;background:#fdfcf9">
+                <button class="btn btn-gold btn-block" type="submit">ارسال درخواست</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="agent-box" style="text-align:right">
+            <h4 style="margin-bottom:14px;text-align:right">اشتراک‌گذاری و علاقه‌مندی</h4>
+            <div style="display:flex;gap:8px">
+              <button class="btn btn-outline" style="flex:1" onclick="shareProp('${p.title}')">🔗 اشتراک</button>
+              <button class="btn ${isFav(p.id)?'btn-gold':'btn-outline'}" style="flex:1" onclick="toggleFav(${p.id}, event)">${isFav(p.id)?'♥ ذخیره شد':'♡ علاقه‌مندی'}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      ${similar.length ? `
+      <div style="margin-top:70px">
+        <div class="section-head" style="text-align:right;margin-bottom:30px">
+          <span class="section-eyebrow">پیشنهاد می‌کنیم</span>
+          <h2 style="text-align:right">ملک‌های مشابه</h2>
+        </div>
+        <div class="grid-props">${similar.map(cardHTML).join('')}</div>
+      </div>`:''}
+    </div>
+  </section>`;
+}
+
+function setGallery(i, id){
+  const p = PROPERTIES.find(x=>x.id===id);
+  if(!p) return;
+  state.galleryIdx = i;
+  $('#mainImg').src = p.images[i];
+  $$('#galleryThumbs img').forEach((el,idx)=> el.classList.toggle('active', idx===i));
+}
+function shareProp(title){
+  const url = location.href;
+  if(navigator.share){ navigator.share({title, url}).catch(()=>{}); }
+  else { navigator.clipboard.writeText(url); toast('لینک ملک کپی شد'); }
+}
+function requestVisit(e, code){
+  e.preventDefault();
+  toast('درخواست بازدید شما ثبت شد', 'کارشناسان ما به‌زودی تماس می‌گیرند');
+  e.target.reset();
+}
+
+/* ============================================================
+   AGENTS PAGE
+============================================================ */
+function renderAgentsPage(){
+  return `
+  <div class="page-head">
+    <div class="container">
+      <h1>مشاوران خانه مدرن</h1>
+      <p>تیمی از متخصصان باتجربه، آماده خدمت‌رسانی به شما</p>
+      <div class="breadcrumb"><a href="#/">خانه</a><span>/</span><span>مشاوران</span></div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="grid-props" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))">
+        ${AGENTS.map(a=>`
+          <div class="agent-card reveal">
+            <div class="agent-photo"><img src="${a.img}" alt="تصویر ${a.name}" loading="lazy"></div>
+            <h4>${a.name}</h4>
+            <div class="agent-role">${a.role}</div>
+            <div class="agent-meta">${a.exp}</div>
+            <div class="agent-meta">تعداد فایل فعال: ${toFa(PROPERTIES.filter(p=>p.agentId===a.id).length)} ملک</div>
+            <div class="agent-contact">
+              <a href="tel:${a.phone}" title="تماس">☎</a>
+              <a href="https://wa.me/98${a.phone.slice(1)}" target="_blank" title="واتساپ">✆</a>
+              <a href="#/contact" title="درخواست مشاوره">✉</a>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ============================================================
+   ABOUT PAGE
+============================================================ */
+function renderAbout(){
+  return `
+  <div class="page-head">
+    <div class="container">
+      <h1>درباره خانه مدرن</h1>
+      <p>داستان ما، ارزش‌ها و تعهد به شما</p>
+      <div class="breadcrumb"><a href="#/">خانه</a><span>/</span><span>درباره ما</span></div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;margin-bottom:70px" class="reveal">
+        <div>
+          <span class="section-eyebrow">درباره ما</span>
+          <h2 style="font-size:clamp(24px,3vw,34px);color:var(--navy);margin:12px 0 20px;line-height:1.4">بیش از یک دهه تجربه در بازار املاک لوکس</h2>
+          <p style="color:var(--muted);margin-bottom:16px">خانه مدرن فعالیت خود را از سال ۱۳۹۲ در حوزه املاک لوکس تهران آغاز کرد. هدف ما از همان ابتدا ساده بود: ایجاد اعتماد، ارائه خدمات شفاف و کمک به مشتریان برای رسیدن به بهترین انتخاب.</p>
+          <p style="color:var(--muted);margin-bottom:16px">امروز با تیمی از ۴۵ مشاور حرفه‌ای و متخصص، بیش از ۳۴۰۰ معامله موفق را در کارنامه خود داریم و افتخار می‌کنیم که خانه‌های زیادی را به خانه‌های رویایی تبدیل کرده‌ایم.</p>
+          <p style="color:var(--muted)">ارزش‌های ما ساده و روشن هستند: صداقت، تخصص، پیگیری و احترام کامل به انتخاب مشتری.</p>
+        </div>
+        <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg)">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80" alt="دفتر آژانس املاک خانه مدرن" loading="lazy">
+        </div>
+      </div>
+
+      <div class="stats" style="border-radius:24px;margin-bottom:70px">
+        <div class="stats-grid" style="position:relative;z-index:2">
+          <div class="stat"><div class="stat-num" data-count="1250">۰</div><div class="stat-label">فایل فعال</div></div>
+          <div class="stat"><div class="stat-num" data-count="3400">۰</div><div class="stat-label">معامله موفق</div></div>
+          <div class="stat"><div class="stat-num" data-count="45">۰</div><div class="stat-label">مشاور</div></div>
+          <div class="stat"><div class="stat-num" data-count="8500">۰</div><div class="stat-label">مشتری راضی</div></div>
+        </div>
+      </div>
+
+      <div class="section-head reveal">
+        <span class="section-eyebrow">ارزش‌های ما</span>
+        <h2>چرا خانه مدرن؟</h2>
+      </div>
+      <div class="steps" style="margin-bottom:50px">
+        <div class="step reveal"><div class="step-num">✓</div><h4>شفافیت کامل</h4><p>تمام اطلاعات ملک و هزینه‌ها از ابتدا به‌صورت شفاف به شما ارائه می‌شود.</p></div>
+        <div class="step reveal"><div class="step-num">★</div><h4>تیم متخصص</h4><p>مشاوران ما هر یک در منطقه تخصصی خود فعال هستند و بازار را به‌خوبی می‌شناسند.</p></div>
+        <div class="step reveal"><div class="step-num">♡</div><h4>پیگیری تا پایان</h4><p>از بازدید اول تا امضای قرارداد و پس از آن، همراه شما هستیم.</p></div>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ============================================================
+   CONTACT PAGE
+============================================================ */
+function renderContact(){
+  return `
+  <div class="page-head">
+    <div class="container">
+      <h1>تماس با ما</h1>
+      <p>منتظر شنیدن صدای شما هستیم</p>
+      <div class="breadcrumb"><a href="#/">خانه</a><span>/</span><span>تماس با ما</span></div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:30px" class="reveal">
+        <div class="form-card">
+          <h3 style="color:var(--navy);margin-bottom:6px">فرم تماس</h3>
+          <p style="color:var(--muted);font-size:14px;margin-bottom:24px">پیام خود را برای ما بنویسید، در اسرع وقت پاسخ می‌دهیم.</p>
+          <form onsubmit="submitContact(event)">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>نام و نام خانوادگی <span class="req">*</span></label>
+                <input type="text" name="name" required minlength="3" placeholder="مثلاً علی محمدی">
+                <span class="err-msg"></span>
+              </div>
+              <div class="form-group">
+                <label>شماره تماس <span class="req">*</span></label>
+                <input type="tel" name="phone" required pattern="09[0-9]{9}" placeholder="۰۹۱۲۱۲۳۴۵۶۷" title="شماره موبایل ۱۱ رقمی وارد کنید">
+                <span class="err-msg"></span>
+              </div>
+              <div class="form-group full">
+                <label>موضوع <span class="req">*</span></label>
+                <select name="subject" required>
+                  <option value="">انتخاب کنید...</option>
+                  <option>مشاوره خرید ملک</option>
+                  <option>مشاوره اجاره ملک</option>
+                  <option>فروش ملک</option>
+                  <option>سرمایه‌گذاری</option>
+                  <option>سایر موارد</option>
+                </select>
+                <span class="err-msg"></span>
+              </div>
+              <div class="form-group full">
+                <label>پیام شما <span class="req">*</span></label>
+                <textarea name="message" required minlength="10" placeholder="توضیحات خود را بنویسید..."></textarea>
+                <span class="err-msg"></span>
+              </div>
+              <div class="full">
+                <button type="submit" class="btn btn-gold btn-lg btn-block">ارسال پیام</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div class="form-card" style="padding:24px">
+            <h4 style="color:var(--navy);margin-bottom:14px">اطلاعات تماس</h4>
+            <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:14px"><span style="color:var(--gold);font-size:20px">☎</span><div><div style="font-size:12px;color:var(--muted)">تلفن دفتر</div><strong style="color:var(--navy)">۰۲۱-۲۲۶۸۴۵۹۰</strong></div></div>
+            <div style="display:flex;gap:12px;align-items:flex-start;margin-bottom:14px"><span style="color:var(--gold);font-size:20px">✉</span><div><div style="font-size:12px;color:var(--muted)">ایمیل</div><strong style="color:var(--navy)">info@khane-modern.ir</strong></div></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--gold);font-size:20px">⌂</span><div><div style="font-size:12px;color:var(--muted)">آدرس</div><strong style="color:var(--navy)">تهران، خیابان ولیعصر، برج نگین، طبقه ۸، واحد ۸۰۱</strong></div></div>
+          </div>
+          <div class="form-card" style="padding:24px">
+            <h4 style="color:var(--navy);margin-bottom:14px">ساعت کاری</h4>
+            <div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:8px"><span style="color:var(--muted)">شنبه تا چهارشنبه</span><strong style="color:var(--navy)">۹:۰۰ تا ۱۹:۰۰</strong></div>
+            <div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:8px"><span style="color:var(--muted)">پنجشنبه</span><strong style="color:var(--navy)">۹:۰۰ تا ۱۴:۰۰</strong></div>
+            <div style="display:flex;justify-content:space-between;font-size:14px"><span style="color:var(--muted)">جمعه</span><strong style="color:#e74c3c">تعطیل</strong></div>
+          </div>
+          <iframe class="map-frame" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=51.40,35.75,51.43,35.78&layer=mapnik&marker=35.765,51.415"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>`;
+}
+
+function submitContact(e){
+  e.preventDefault();
+  if(!validateForm(e.target)) return;
+  toast('پیام شما با موفقیت ارسال شد', 'به‌زودی با شما تماس می‌گیریم');
+  e.target.reset();
+}
+
+/* ============================================================
+   SUBMIT PAGE
+============================================================ */
+function renderSubmit(){
+  return `
+  <div class="page-head">
+    <div class="container">
+      <h1>ثبت ملک</h1>
+      <p>ملک خود را برای فروش، رهن یا اجاره در خانه مدرن ثبت کنید</p>
+      <div class="breadcrumb"><a href="#/">خانه</a><span>/</span><span>ثبت ملک</span></div>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container" style="max-width:960px">
+      <div class="form-card reveal">
+        <form onsubmit="submitProperty(event)">
+          <h3 style="color:var(--navy);margin-bottom:6px">اطلاعات مالک</h3>
+          <p style="color:var(--muted);font-size:13.5px;margin-bottom:20px">لطفاً اطلاعات دقیق وارد کنید تا کارشناسان ما با شما تماس بگیرند.</p>
+          <div class="form-grid">
+            <div class="form-group"><label>نام و نام خانوادگی <span class="req">*</span></label><input type="text" name="name" required minlength="3" placeholder="نام کامل مالک"><span class="err-msg"></span></div>
+            <div class="form-group"><label>شماره تماس <span class="req">*</span></label><input type="tel" name="phone" required pattern="09[0-9]{9}" placeholder="۰۹۱۲۱۲۳۴۵۶۷"><span class="err-msg"></span></div>
+            <div class="form-group full"><label>ایمیل (اختیاری)</label><input type="email" name="email" placeholder="example@mail.com"><span class="err-msg"></span></div>
+          </div>
+
+          <h3 style="color:var(--navy);margin:32px 0 6px">اطلاعات ملک</h3>
+          <p style="color:var(--muted);font-size:13.5px;margin-bottom:20px">مشخصات ملک خود را وارد کنید.</p>
+          <div class="form-grid">
+            <div class="form-group"><label>نوع معامله <span class="req">*</span></label>
+              <select name="deal" required><option value="">انتخاب کنید...</option><option value="buy">فروش</option><option value="rent">رهن و اجاره</option></select><span class="err-msg"></span>
+            </div>
+            <div class="form-group"><label>نوع ملک <span class="req">*</span></label>
+              <select name="type" required><option value="">انتخاب کنید...</option><option value="apartment">آپارتمان</option><option value="villa">ویلا</option><option value="penthouse">پنت‌هاوس</option><option value="land">زمین</option><option value="commercial">تجاری</option></select><span class="err-msg"></span>
+            </div>
+            <div class="form-group"><label>متراژ (متر) <span class="req">*</span></label><input type="number" name="area" required min="10" placeholder="مثلاً ۱۵۰"><span class="err-msg"></span></div>
+            <div class="form-group"><label>تعداد خواب</label><input type="number" name="rooms" min="0" placeholder="مثلاً ۳"><span class="err-msg"></span></div>
+            <div class="form-group"><label>طبقه</label><input type="number" name="floor" min="0" placeholder="مثلاً ۵"><span class="err-msg"></span></div>
+            <div class="form-group"><label>سال ساخت</label><input type="number" name="year" min="1350" max="1410" placeholder="مثلاً ۱۴۰۰"><span class="err-msg"></span></div>
+            <div class="form-group"><label>قیمت (تومان) — برای فروش</label><input type="number" name="price" min="0" placeholder="مثلاً ۲۰۰۰۰۰۰۰۰۰۰"><span class="err-msg"></span></div>
+            <div class="form-group"><label>ودیعه (تومان) — برای اجاره</label><input type="number" name="deposit" min="0" placeholder="مثلاً ۵۰۰۰۰۰۰۰۰"><span class="err-msg"></span></div>
+            <div class="form-group full"><label>اجاره ماهانه (تومان) — برای اجاره</label><input type="number" name="rent" min="0" placeholder="مثلاً ۵۰۰۰۰۰۰۰"><span class="err-msg"></span></div>
+            <div class="form-group full"><label>آدرس کامل <span class="req">*</span></label><input type="text" name="address" required minlength="10" placeholder="استان، شهر، منطقه، خیابان، پلاک"><span class="err-msg"></span></div>
+          </div>
+
+          <h3 style="color:var(--navy);margin:32px 0 6px">امکانات ملک</h3>
+          <div class="amenities" style="margin-bottom:8px">
+            ${['پارکینگ','آسانسور','انباری','استخر','سونا','جکوزی','روف گاردن','لابی','سیستم هوشمند','نگهبانی ۲۴ ساعته','بالکن','کولر گازی'].map(a=>`
+              <label class="amenity" style="cursor:pointer">
+                <input type="checkbox" name="amenities" value="${a}" style="width:auto;margin:0">
+                ${a}
+              </label>
+            `).join('')}
+          </div>
+
+          <h3 style="color:var(--navy);margin:32px 0 6px">توضیحات و تصاویر</h3>
+          <div class="form-grid">
+            <div class="form-group full"><label>توضیحات ملک</label><textarea name="desc" placeholder="توضیحات کامل درباره ملک خود بنویسید..."></textarea></div>
+            <div class="form-group full">
+              <label>بارگذاری تصویر (اختیاری)</label>
+              <input type="file" accept="image/*" multiple style="padding:12px">
+              <small style="color:var(--muted);font-size:12px">می‌توانید چند تصویر انتخاب کنید</small>
+            </div>
+            <div class="full">
+              <button type="submit" class="btn btn-gold btn-lg btn-block">ثبت ملک</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>`;
+}
+
+function submitProperty(e){
+  e.preventDefault();
+  if(!validateForm(e.target)) return;
+  const data = new FormData(e.target);
+  const deal = data.get('deal');
+  const price = data.get('price');
+  const deposit = data.get('deposit');
+  if(deal === 'buy' && !price){ toast('برای فروش، وارد کردن قیمت الزامی است','','error'); return; }
+  if(deal === 'rent' && !deposit){ toast('برای اجاره، وارد کردن ودیعه الزامی است','','error'); return; }
+  toast('ملک شما با موفقیت ثبت شد', 'کارشناسان ما به‌زودی تماس می‌گیرند');
+  e.target.reset();
+}
+
+/* ============================================================
+   FORM VALIDATION
+============================================================ */
+function validateForm(form){
+  let ok = true;
+  form.querySelectorAll('[required],[pattern]').forEach(el=>{
+    el.classList.remove('err');
+    const msg = el.parentElement.querySelector('.err-msg');
+    if(msg) msg.textContent = '';
+    if(!el.checkValidity()){
+      ok = false;
+      el.classList.add('err');
+      if(msg){
+        if(el.validity.valueMissing) msg.textContent = 'این فیلد الزامی است.';
+        else if(el.validity.patternMismatch) msg.textContent = el.title || 'فرمت وارد شده صحیح نیست.';
+        else if(el.validity.tooShort) msg.textContent = 'مقدار وارد شده کوتاه است.';
+        else msg.textContent = 'لطفاً مقدار صحیح وارد کنید.';
+      }
+    }
+  });
+  if(!ok) toast('لطفاً خطاهای فرم را برطرف کنید','','error');
+  return ok;
+}
+
+function subscribeNews(e){
+  e.preventDefault();
+  const input = e.target.querySelector('input');
+  if(!input.value) return;
+  toast('عضویت شما در خبرنامه ثبت شد');
+  e.target.reset();
+}
+
+/* ============================================================
+   MOBILE MENU
+============================================================ */
+function openMobileMenu(){ $('#mobileMenu').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeMobileMenu(){ $('#mobileMenu').classList.remove('open'); document.body.style.overflow=''; }
+function toggleMobileMenu(){ $('#mobileMenu').classList.contains('open') ? closeMobileMenu() : openMobileMenu(); }
+
+/* ============================================================
+   REVEAL & COUNTERS
+============================================================ */
+let revealObserver;
+function initReveal(){
+  if(revealObserver) revealObserver.disconnect();
+  revealObserver = new IntersectionObserver(entries=>{
+    entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); revealObserver.unobserve(en.target); } });
+  }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+  $$('.reveal').forEach(el=> revealObserver.observe(el));
+}
+
+let countersDone = new Set();
+function initStatsCounters(){
+  const els = $$('[data-count]');
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(en=>{
+      if(en.isIntersecting && !countersDone.has(en.target)){
+        countersDone.add(en.target);
+        const target = Number(en.target.dataset.count);
+        const dur = 1600;
+        const start = performance.now();
+        function tick(now){
+          const t = Math.min((now-start)/dur, 1);
+          const eased = 1 - Math.pow(1-t, 3);
+          en.target.textContent = toFa(Math.floor(target * eased));
+          if(t < 1) requestAnimationFrame(tick);
+          else en.target.textContent = toFa(target) + '+';
+        }
+        requestAnimationFrame(tick);
+        obs.unobserve(en.target);
+      }
+    });
+  }, {threshold:.4});
+  els.forEach(el=> obs.observe(el));
+}
+
+/* ============================================================
+   EVENTS
+============================================================ */
+window.addEventListener('scroll', ()=>{
+  $('#header').classList.toggle('scrolled', window.scrollY > 30);
+});
+
+window.addEventListener('hashchange', handleRoute);
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  // menu
+  $('#menuToggle').addEventListener('click', toggleMobileMenu);
+  // filters overlay
+  $('#filtersOverlay').addEventListener('click', closeFilters);
+  // search tabs (home)
+  document.addEventListener('click', e=>{
+    const tab = e.target.closest('.search-tab');
+    if(tab){
+      $$('.search-tab').forEach(t=> t.classList.remove('active'));
+      tab.classList.add('active');
+    }
+  });
+  // route
+  if(!location.hash) location.hash = '#/';
+  handleRoute();
+});
+</script>
+</body>
+</html>
